@@ -27,7 +27,6 @@ module.exports = {
         })
         try {
             await user.save();
-
             return response.status(201).json({ message: 'user cadastred successfully' })
         } catch (error) {
             return response.status(400).json({ error: error.message })
